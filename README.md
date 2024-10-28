@@ -15,23 +15,23 @@ This project implements long-term and short-term prediction models across three 
 Before running the evaluation scripts, update the dataset loading paths and pre-trained model paths:
 
 #### **Update Paths**
-- Open dataset/dataloader.py and replace path_to_data with your local dataset path.
-- Open test.py and replace weights_path_j with your local pre-trained model path.
+- Open `dataset/dataloader.py` and replace path_to_data with your local dataset path.
+- Open `test.py` and replace `weights_path_j` with your local pre-trained model path.
 
 #### **Run Evaluation Scripts**
 Execute the following commands to validate the model's performance on long-term and short-term predictions across three datasets:
 
 ```bash
 python test_h36m.py --task short
-```bash
+
 python test_h36m.py --task long
-```bash
+
 python test_cmu.py --task short
-```bash
+
 python test_cmu.py --task long
-```bash
+
 python test_3dpw.py --task short
-```bash
+
 python test_3dpw.py --task long
 ```
 
@@ -48,15 +48,15 @@ Before running the training scripts, you need to update the dataset loading path
 Execute the following commands to train the models for both long-term and short-term predictions across the three datasets. The trained models will be saved in the `ckpt` directory with the specified model names.
 ```bash
 python main_h36m.py --model_save_dir ckpt --model_save_name h36m_short_model --task short
-```bash
+
 python main_h36m.py --model_save_dir ckpt --model_save_name h36m_long_model --task long
-```bash
+
 python main_cmu.py --model_save_dir ckpt --model_save_name cmu_short_model --task short
-```bash
+
 python main_cmu.py --model_save_dir ckpt --model_save_name cmu_long_model --task long
-```bash
+
 python main_3dpw.py --model_save_dir ckpt --model_save_name 3dpw_short_model --task short
-```bash
+
 python main_3dpw.py --model_save_dir ckpt --model_save_name 3dpw_long_model --task long
 ```
 
