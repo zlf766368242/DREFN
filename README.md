@@ -25,8 +25,15 @@ Execute the following commands to validate the model's performance on long-term 
 
 ```bash
 python test_h36m.py --task short
+```bash
 python test_h36m.py --task long
+```bash
 python test_cmu.py --task short
+```bash
 python test_cmu.py --task long
+```bash
 python test_3dpw.py --task short
+```bash
 python test_3dpw.py --task long
+
+### 2. Evaluation
