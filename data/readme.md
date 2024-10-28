@@ -1,1 +1,1 @@
-The data direction of H36M/CMU/3dpw
+The data direction of H36M/CMU/3DPW
