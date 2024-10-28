@@ -59,7 +59,7 @@ def main():
         kernel_size=args.kernel_size,
         graph_args_j=args.graph_args_j,
         graph_args_b=args.graph_args_b)
-        weights_path_j = '/root/dataDisk/MAGCN/pretrain/h36m_short_model_h36m_ckpt_1.pth'
+        weights_path_j = '/root/dataDisk/DREFN/pretrain/h36m_short_model_h36m_ckpt_1.pth'
     else:
         model = MultiScaleModel2(
         in_dim=3,
@@ -69,7 +69,7 @@ def main():
         kernel_size=args.kernel_size,
         graph_args_j=args.graph_args_j,
         graph_args_b=args.graph_args_b)
-        weights_path_j = '/root/dataDisk/MAGCN/pretrain/h36m_long_model_h36m_ckpt_1.pth'
+        weights_path_j = '/root/dataDisk/DREFN/pretrain/h36m_long_model_h36m_ckpt_1.pth'
     model = model.cuda()
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)   
     checkpoint = torch.load(weights_path_j)
