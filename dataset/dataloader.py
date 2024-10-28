@@ -10,7 +10,7 @@ class H36motion3D(Dataset):
         """
         param split: 0 train, 1 testing, 2 validation
         """
-        path_to_data = '/Users/pc/Desktop/MAGCN/data/h3.6m/dataset'
+        path_to_data = '/Users/pc/Desktop/DREFN/data/h3.6m/dataset'
         self.path_to_data = path_to_data
         self.split = split
         self.input_n = input_n
@@ -59,7 +59,7 @@ class H36motion3D(Dataset):
             return loc_data[:,:self.input_n], vel_data[:,:self.input_n], loc_data[:,self.input_n:self.input_n+self.output_n],loc_data_ori[self.input_n:self.input_n+self.output_n],item
 class CMU_Motion3D(Dataset):
     def __init__(self, actions, input_n=10, output_n=10, split=0, dim_used=0, scale=100):
-        path_to_data = os.path.abspath('/Users/pc/Desktop/MAGCN/data/cmu')
+        path_to_data = os.path.abspath('/Users/pc/Desktop/DREFN/data/cmu')
         self.path_to_data = path_to_data
         self.split = split
         self.input_n = input_n
@@ -127,7 +127,7 @@ class CMU_Motion3D(Dataset):
             return loc_data[:,:self.input_n], vel_data[:,:self.input_n], loc_data[:,self.input_n:self.input_n+self.output_n],loc_data_ori[self.input_n:self.input_n+self.output_n],item
 class Pose3dPW3D(Dataset):
     def __init__(self, input_n=10, output_n=30, dct_n=15, split=0, scale=100, debug=False):
-        path_to_data = '/root/dataDisk/MAGCN/data/3dpw/sequenceFiles'
+        path_to_data = '/root/dataDisk/DREFN/data/3dpw/sequenceFiles'
         self.path_to_data = path_to_data
         self.split = split
         self.dct_n = dct_n
