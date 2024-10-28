@@ -55,7 +55,7 @@ def main():
         kernel_size=args.kernel_size,
         graph_args_j=args.graph_args_j,
         graph_args_b=args.graph_args_b)
-        weights_path_j = '/root/dataDisk/MAGCN/pretrain/3dpw_short_model3dpw_ckpt_1.pth'
+        weights_path_j = '/root/dataDisk/DREFN/pretrain/3dpw_short_model3dpw_ckpt_1.pth'
     else:
         model = MultiScaleModel2(
         in_dim=3,
@@ -65,7 +65,7 @@ def main():
         kernel_size=args.kernel_size,
         graph_args_j=args.graph_args_j,
         graph_args_b=args.graph_args_b)
-        weights_path_j = '/root/dataDisk/MAGCN/pretrain/3dpw_long_model3dpw_ckpt_1.pth'
+        weights_path_j = '/root/dataDisk/DREFN/pretrain/3dpw_long_model3dpw_ckpt_1.pth'
     model = model.cuda()
     checkpoint = torch.load(weights_path_j)
     if 'state_dict' in checkpoint:
