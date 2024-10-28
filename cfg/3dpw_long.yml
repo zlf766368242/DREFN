@@ -1,0 +1,33 @@
+batch_size: 8
+epochs: 99
+past_length: 10
+future_length: 10
+log_interval: 1
+test_interval: 1
+lr: 5.e-4
+epoch_decay: 6
+lr_gamma: 0.9
+nf: 96
+channels: 32
+time_exp: 0
+weight_decay: 1.e-10
+scale: 100
+apply_decay: true
+denoise: true
+part_noise: true
+denoise_mode: past
+weighted_loss: false
+max_weight: 5
+
+
+
+kernel_size: [5, 2]
+graph_args_j:
+  layout: '3dpw'
+  strategy: 'distance'
+graph_args_p:
+  layout: '3dpw'
+  strategy: 'distance'
+graph_args_b:
+  layout: '3dpw'
+  strategy: 'distance'
