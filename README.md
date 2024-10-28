@@ -15,7 +15,7 @@ This project implements long-term and short-term prediction models across three 
 Before running the evaluation scripts, update the dataset loading paths and pre-trained model paths:
 
 #### **Update Paths**
-- Open `dataset/dataloader.py` and replace path_to_data with your local dataset path.
+- Open `dataset/dataloader.py` and replace `path_to_data` with your local dataset path.
 - Open `test.py` and replace `weights_path_j` with your local pre-trained model path.
 
 #### **Run Evaluation Scripts**
