@@ -1,6 +1,6 @@
 ## Description
 
-This project implements long-term and short-term prediction models across three datasets: H36M, CMU, and 3DPW. Utilizing CUDA 12.1 and PyTorch 2.3.1, the models are trained and evaluated to assess their performance in various prediction tasks. The repository includes scripts for data loading, training, and testing, ensuring a streamlined workflow for researchers and developers.
+This project implements long-term and short-term prediction models across three datasets. Utilizing CUDA 12.1 and PyTorch 2.3.1, the models are trained and evaluated to assess their performance in various prediction tasks. The repository includes scripts for data loading, training, and testing, ensuring a streamlined workflow for researchers and developers.
 
 ## Dependencies
 
