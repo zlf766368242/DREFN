@@ -50,7 +50,7 @@ def main():
             "walkingtogether"]
     loaders_test = {}
     for act in acts:
-        dataset_test = H36motion3D(actions=act, input_n=args.past_length, output_n=args.future_length, split=1,
+        dataset_test = H36motion3D(actions=act, input_n=args.past_length, output_n=args.future_length, split=2,
                                    scale=args.scale)
         loaders_test[act] = torch.utils.data.DataLoader(dataset_test, batch_size=args.batch_size, shuffle=False,
                                                         drop_last=False,
